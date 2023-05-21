@@ -1,0 +1,62 @@
+html, body {
+  height: 100%;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid black;
+  padding: 10px;
+  width: 4em;
+  text-align: center;
+}
+
+td:first-child {
+  background-color: #885a6940;
+}
+
+th:first-child {
+  background-color: yellow;
+}
+
+th {
+  background-color: #cce7ff;
+}
+
+.start {
+  margin: auto;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 35em;
+  height: 28em;
+  padding: 10px;
+}
+
+#tabela {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.przycisk {
+  margin: 2em;
+}
+
+.btn.btn-square {
+  border-radius: 0;
+}
+
+td:first-child {
+  font-weight: bold
+}
