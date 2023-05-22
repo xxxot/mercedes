@@ -4,7 +4,9 @@ $(document).ready(function () {
 
   const COLUMNS = 4;
   var ludzie = m.concat(f);
-
+	
+	checking();
+	
   $('#generuj').click(function () {
     generate();
   });
@@ -188,6 +190,37 @@ $(document).ready(function () {
   });
   
   $('#data').text((new Date()).toLocaleDateString('pl-PL'));
+  $('#a1, #a2, #a3').on('click', function(){
+	  checking();
+  });
+
+	function checking() {
+		var a1Check = $('#a1').is(':checked');
+		var a2Check = $('#a2').is(':checked');
+		var a3Check = $('#a3').is(':checked');
+		
+		if (a1Check == true)
+		{
+			$('#czas1').text('6-8');
+			$('#czas2').text('8-10');
+			$('#czas3').text('10-12');
+			$('#czas4').text('12-14');
+		}
+		else if (a2Check == true)
+		{
+			$('#czas1').text('14-16');
+			$('#czas2').text('16-18');
+			$('#czas3').text('18-20');
+			$('#czas4').text('20-22');
+		}
+		else if (a3Check == true)
+		{
+			$('#czas1').text('22-24');
+			$('#czas2').text('00-02');
+			$('#czas3').text('02-04');
+			$('#czas4').text('04-06');
+		}		
+	}
   
 });
 
@@ -206,4 +239,26 @@ function shuffle(lista) {
 
   return lista;
 }
+
+/*
+	$('#a1 ,#a2 , #a3').on('click' , function(){
+    var $a1Check  = $('#a1').is(':checked');
+    var $a2Check  = $('#a2').is(':checked');
+    var $a3Check  = $('#a3').is(':checked');
+    if($a1Check)
+	{
+       
+    }
+    else if($a2Check)
+	{
+        
+    }    
+    else if($a3Check) 
+	{
+        
+    }};
+*/
+
+
+	
 
