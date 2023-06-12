@@ -1,6 +1,6 @@
 $(document).ready(function () {
   var f = ['Maja', 'Marcela', 'Ula', 'Gosia'];
-  var m = ['Dawid', 'Darek', 'Kamil'];
+  var m = ['Dawid', 'Darek', 'Młody'];
 
   const COLUMNS = 4;
   var ludzie = m.concat(f);
