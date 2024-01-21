@@ -1,5 +1,5 @@
 $(document).ready(function () {
-  var f = ['Agnieszka', 'Justyna', 'Paulina', 'Gosia'];
+  var f = ['Agnieszka', 'Marcela', 'Paulina', 'Gosia'];
   var m = ['Rafał', 'Darek', 'Szymon'];
 
   const COLUMNS = 4;
